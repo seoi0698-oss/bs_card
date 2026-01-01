@@ -5,109 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>보성愛는 선형수</title>
     <style>
-        /* (기존 CSS 유지하며 요청하신 수치만 수정) */
-        .contact-info a {
-            color: #2563eb;
-            font-size: 29px; /* 31px -> 29px */
-            font-weight: 800;
-            text-decoration: none;
+        /* 기본 스타일 초기화 */
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        body {
+            background-color: #eef2ff; /* 아주 연한 파랑 배경 */
+            margin: 0;
+            padding: 10px;
+            font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
             display: flex;
-            align-items: center;
             justify-content: center;
-            gap: 10px; /* 12px -> 10px */
-        }
-        
-        .contact-icon {
-            font-size: 29px; /* 31px -> 29px */
-            animation: ring 2s ease-in-out infinite;
         }
 
-        @keyframes ring {
-            0%, 100% { transform: rotate(0deg); }
-            10%, 30% { transform: rotate(-10deg); }
-            20%, 40% { transform: rotate(10deg); }
+        /* 모바일 컨테이너 (파랑 틀) */
+        .mobile-container {
+            width: 100%;
+            max-width: 450px;
+            background-color: #ffffff;
+            border: 3px solid #1d4ed8; /* 메인 파랑 테두리 */
+            border-radius: 25px; /* 모서리 곡선 */
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(29, 78, 216, 0.15);
+            position: relative;
         }
 
+        /* 메인 섹션 이미지 */
+        .main-section {
+            position: relative;
+            width: 100%;
+            background-color: #dbeafe;
+        }
+        .main-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* 스크롤 지표 */
         .scroll-indicator {
             position: absolute;
-            bottom: 38px; /* 40px -> 38px */
+            bottom: 38px;
             left: 50%;
             transform: translateX(-50%);
-            z-index: 5;
             animation: bounce 2s infinite;
-            opacity: 0.7;
         }
-
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
-            40% { transform: translateX(-50%) translateY(-10px); }
-            60% { transform: translateX(-50%) translateY(-5px); }
-        }
-
         .scroll-indicator span {
             display: block;
-            width: 18px; /* 20px -> 18px */
-            height: 18px; /* 20px -> 18px */
-            border-bottom: 3px solid #93c5fd;
-            border-right: 3px solid #93c5fd;
+            width: 18px;
+            height: 18px;
+            border-bottom: 3px solid #ffffff;
+            border-right: 3px solid #ffffff;
             transform: rotate(45deg);
-        }
-
-        .highlight-blue {
-            color: #2563eb;
-            font-weight: bold;
-        }
-    </style>
-</head>
-<body>
-    <div class="mobile-container">
-        <section class="main-section">
-            <img src="main_image.png" alt="보성愛는 선형수" class="main-image">
-            <div class="scroll-indicator">
-                <span></span>
-            </div>
-        </section>
-
-        <section class="profile-section">
-            <div class="profile-header">
-                <h1 class="profile-title">❤️보성맞춤❤️</h1>
-                <h2 class="profile-subtitle">보성군민의 선택이<br>보성군의 미래입니다 </h2>
-                <p class="profile-slogan">선형수 두손모음</p>
-            </div>
-
-            <div class="section-title">🏛️ 주요 경력</div>
-            <ul class="career-list">
-                <li class="career-item"><strong>21대</strong> 이재명 대통령선거 직속 <br><span class="highlight-blue">국민통합본부장</span></li>
-                <li class="career-item"><strong>20대</strong> 이재명 대통령선거 <br>중앙선대본 <span class="highlight-blue">부대변인</span></li>
-                <li class="career-item"><strong>19대</strong> 문재인 대통령 후보 <br><span class="highlight-blue">전남공동선대 위원장</span></li>
-                <li class="career-item">더불어포럼 <br>전남 상임공동 <span class="highlight-blue">대표</span></li>
-                <li class="career-item">민주당 중앙당 인권위원회 <span class="highlight-blue">부위원장</span></li>
-                <li class="career-item">민주당 중앙당 <br>정책위원회 <span class="highlight-blue">부의장</span></li>
-                <li class="career-item">민주당 <span class="highlight-blue">백년당원</span> (528명)</li>
-            </ul>
-
-            <div class="section-title">🏆 수상 및 활동</div>
-            <ul class="career-list">
-                <li class="career-item"><span class="highlight-blue">12.3내란을 이겨낸 시민영웅</span> 선정</li>
-                <li class="career-item">글로벌관광객<span class="highlight-blue">1억명유치</span><br>범국민추진위원회 <span class="highlight-blue">공동대표</span></li>
-                <li class="career-item">(사)따뜻한 한반도 <span class="highlight-blue">사랑의 <br>연탄나눔운동</span> 보성지부 운영위원장<br><span class="highlight-blue">(19년 550,500장)</span></li>
-                <li class="career-item">(사)보성학연구소 <br><span class="highlight-blue">이사장</span></li>
-                <li class="career-item"><span class="highlight-blue">보성군민의상</span> 수상(1992년)</li>
-                <li class="career-item"><span class="highlight-blue">2022년 <br>보성군수</span> 출마</li>
-                <li class="career-item"><span class="highlight-blue">2026년 보성군수 </span><br>출마 예정자(재수생)</li>
-            </ul>
-
-            <div class="section-title">🎓 학력</div>
-            <div class="education-box">
-                <p>보성남초 <br>· 보성중 </p>
-                <p>광주숭일고 <br>· 서울 세종대</p>
-            </div>
-
-            <div class="final-message">
-                <h2>보성愛는 <br>寶城맞춤 </h2>
-                <p>선형수 두손모음</p>
-            </div>
-        </section>
-    </div>
-</body>
-</html>
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3

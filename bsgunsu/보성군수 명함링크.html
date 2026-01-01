@@ -58,7 +58,6 @@
             100% { transform: rotate(360deg); }
         }
 
-        /* 메인 이미지 스타일 최적화 */
         .main-image {
             width: auto;
             max-width: 90%;
@@ -102,7 +101,7 @@
         }
 
         .profile-title {
-            font-size: 30px;
+            font-size: 36px; /* 33px -> 36px */
             font-weight: 800;
             color: white;
             margin-bottom: 12px;
@@ -115,24 +114,24 @@
         }
 
         .profile-subtitle {
-            font-size: 22px;
+            font-size: 28px; /* 25px -> 28px */
             color: rgba(255, 255, 255, 0.95);
             margin-bottom: 8px;
             text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
         }
 
         .profile-slogan {
-            font-size: 17px;
+            font-size: 23px; /* 20px -> 23px */
             color: #dbeafe;
             font-weight: 500;
             margin-top: 15px;
         }
 
         .section-title {
-            font-size: 21px;
+            font-size: 28px; /* 24px -> 28px */
             font-weight: 800;
             color: #1e3a8a;
-            margin: 40px 0 20px 0;
+            margin: 45px 0 20px 0;
             padding-left: 15px;
             border-left: 6px solid #3b82f6;
         }
@@ -144,15 +143,16 @@
 
         .career-item {
             background-color: #f8fafc;
-            padding: 20px;
-            margin-bottom: 14px;
+            padding: 22px; /* 패딩 살짝 증가 */
+            margin-bottom: 16px;
             border-radius: 16px;
             border: 1px solid #eff6ff;
-            font-size: 16px;
-            line-height: 1.6;
+            font-size: 22px; /* 19px -> 22px */
+            line-height: 1.5;
             color: #334155;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
             transition: transform 0.2s ease;
+            animation: fadeInUp 0.6s ease-out backwards;
         }
 
         .career-item:hover {
@@ -166,8 +166,7 @@
             font-weight: 700;
         }
 
-        /* 리스트 애니메이션 */
-        .career-item { animation: fadeInUp 0.6s ease-out backwards; }
+        /* 리스트 애니메이션 지연시간 */
         .career-item:nth-child(1) { animation-delay: 0.1s; }
         .career-item:nth-child(2) { animation-delay: 0.2s; }
         .career-item:nth-child(3) { animation-delay: 0.3s; }
@@ -183,7 +182,7 @@
 
         .education-box {
             background: #eff6ff;
-            padding: 30px;
+            padding: 35px;
             border-radius: 20px;
             text-align: center;
             margin: 25px 0;
@@ -192,19 +191,19 @@
         }
 
         .education-box p {
-            font-size: 17px;
+            font-size: 23px; /* 20px -> 23px */
             color: #1e40af;
-            line-height: 2;
+            line-height: 1.8;
             font-weight: 600;
         }
 
         .final-message {
             text-align: center;
-            padding: 40px 25px;
+            padding: 45px 25px;
             background: linear-gradient(135deg, #1d4ed8 0%, #1e3a8a 100%);
             color: white;
             border-radius: 24px;
-            margin: 40px 0;
+            margin: 45px 0;
             box-shadow: 0 15px 30px rgba(30, 58, 138, 0.3);
             animation: bounceIn 1s ease-out;
         }
@@ -216,40 +215,40 @@
         }
 
         .final-message h2 {
-            font-size: 26px;
+            font-size: 32px; /* 29px -> 32px */
             margin-bottom: 15px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
 
         .final-message p {
-            font-size: 18px;
+            font-size: 24px; /* 21px -> 24px */
             line-height: 1.8;
         }
 
         .contact-info {
             text-align: center;
-            padding: 25px;
+            padding: 30px;
             background-color: white;
             border-radius: 16px;
-            margin-top: 25px;
-            margin-bottom: 40px;
+            margin-top: 30px;
+            margin-bottom: 50px;
             border: 1px solid #e2e8f0;
             animation: fadeIn 1.2s ease-out;
         }
 
         .contact-info a {
             color: #2563eb;
-            font-size: 24px;
+            font-size: 31px; /* 27px -> 31px */
             font-weight: 800;
             text-decoration: none;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
+            gap: 12px;
         }
         
         .contact-icon {
-            font-size: 24px;
+            font-size: 31px;
             animation: ring 2s ease-in-out infinite;
         }
 
@@ -259,7 +258,6 @@
             20%, 40% { transform: rotate(10deg); }
         }
 
-        /* 스크롤 다운 인디케이터 */
         .scroll-indicator {
             position: absolute;
             bottom: 40px;
@@ -295,7 +293,6 @@
     <div class="mobile-container">
         <section class="main-section">
             <img src="main_image.png" alt="보성愛는 선형수" class="main-image">
-            
             <div class="scroll-indicator">
                 <span></span>
             </div>
@@ -310,9 +307,9 @@
 
             <div class="section-title">🏛️ 주요 경력</div>
             <ul class="career-list">
-                <li class="career-item"><strong>21대</strong> 이재명 대통령선거 직속 국가비전 <span class="highlight-blue">국민통합본부장</span></li>
-                <li class="career-item"><strong>20대</strong> 이재명 대통령선거 중앙선대본 <span class="highlight-blue">부대변인</span></li>
-                <li class="career-item"><strong>19대</strong> 문재인 대통령 후보 전남공동선대 <span class="highlight-blue">위원장</span></li>
+                <li class="career-item"><strong>21대</strong> 이재명 대통령선거 직속 <br><span class="highlight-blue">국민통합본부장</span></li>
+                <li class="career-item"><strong>20대</strong> 이재명 대통령선거 <br>중앙선대본 <span class="highlight-blue">부대변인</span></li>
+                <li class="career-item"><strong>19대</strong> 문재인 대통령 후보 <br>전남공동선대 <span class="highlight-blue">위원장</span></li>
                 <li class="career-item">더불어포럼 전남 상임공동 <span class="highlight-blue">대표</span></li>
                 <li class="career-item">민주당 중앙당 인권위원회 <span class="highlight-blue">부위원장</span></li>
                 <li class="career-item">민주당 중앙당 정책위원회 <span class="highlight-blue">부의장</span></li>
@@ -322,8 +319,8 @@
             <div class="section-title">🏆 수상 및 활동</div>
             <ul class="career-list">
                 <li class="career-item"><span class="highlight-blue">12.3내란을 이겨낸 시민영웅</span> 선정</li>
-                <li class="career-item">글로벌관광객<span class="highlight-blue">1억명유치</span> 범국민추진위원회 공동대표</li>
-                <li class="career-item">(사)따뜻한 한반도 <span class="highlight-blue">사랑의 연탄나눔운동</span> 보성지부 운영위원장<br><span class="highlight-blue">(18년 540,900장)</span></li>
+                <li class="career-item">글로벌관광객<span class="highlight-blue">1억명유치</span><br>범국민추진위원회 공동대표</li>
+                <li class="career-item">(사)따뜻한 한반도 <span class="highlight-blue">사랑의 <br>연탄나눔운동</span> 보성지부 운영위원장<br><span class="highlight-blue">(18년 540,900장)</span></li>
                 <li class="career-item">(사)보성학연구소 <span class="highlight-blue">이사장</span></li>
                 <li class="career-item"><span class="highlight-blue">보성군민의상</span> 수상(1992년)</li>
                 <li class="career-item"><span class="highlight-blue">2022년 보성군수</span> 출마</li>
@@ -332,8 +329,8 @@
 
             <div class="section-title">🎓 학력</div>
             <div class="education-box">
-                <p>보성남초 · 보성중 </p>
-                <p>광주숭일고 · 서울 세종대</p>
+                <p>보성남초 ·보성중 </p>
+                <p>광주숭일고 ·서울 세종대</p>
             </div>
 
             <div class="final-message">
@@ -341,15 +338,9 @@
                 <p>선형수 두손모음</p>
             </div>
 
-            <div class="contact-info">
-                <a href="tel:010-3602-0698">
-                    <span class="contact-icon">📞</span> 010-3602-0698
-                </a>
-            </div>
+
         </section>
     </div>
 </body>
 
 </html>
-
-

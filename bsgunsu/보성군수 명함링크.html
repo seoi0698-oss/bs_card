@@ -5,20 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>보성愛는 선형수</title>
     <style>
-        /* (위쪽 CSS는 동일, 생략 없이 그대로 유지) */
+        /* (기존 CSS 유지하며 요청하신 수치만 수정) */
         .contact-info a {
             color: #2563eb;
-            font-size: 31px; /* 27px -> 31px */
+            font-size: 29px; /* 31px -> 29px */
             font-weight: 800;
             text-decoration: none;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 12px;
+            gap: 10px; /* 12px -> 10px */
         }
         
         .contact-icon {
-            font-size: 31px;
+            font-size: 29px; /* 31px -> 29px */
             animation: ring 2s ease-in-out infinite;
         }
 
@@ -30,7 +30,7 @@
 
         .scroll-indicator {
             position: absolute;
-            bottom: 40px;
+            bottom: 38px; /* 40px -> 38px */
             left: 50%;
             transform: translateX(-50%);
             z-index: 5;
@@ -46,8 +46,8 @@
 
         .scroll-indicator span {
             display: block;
-            width: 20px;
-            height: 20px;
+            width: 18px; /* 20px -> 18px */
+            height: 18px; /* 20px -> 18px */
             border-bottom: 3px solid #93c5fd;
             border-right: 3px solid #93c5fd;
             transform: rotate(45deg);

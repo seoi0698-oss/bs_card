@@ -101,7 +101,7 @@
         }
 
         .profile-title {
-            font-size: 36px; /* 33px -> 36px */
+            font-size: 36px;
             font-weight: 800;
             color: white;
             margin-bottom: 12px;
@@ -114,21 +114,21 @@
         }
 
         .profile-subtitle {
-            font-size: 28px; /* 25px -> 28px */
+            font-size: 28px;
             color: rgba(255, 255, 255, 0.95);
             margin-bottom: 8px;
             text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
         }
 
         .profile-slogan {
-            font-size: 23px; /* 20px -> 23px */
+            font-size: 23px;
             color: #dbeafe;
             font-weight: 500;
             margin-top: 15px;
         }
 
         .section-title {
-            font-size: 28px; /* 24px -> 28px */
+            font-size: 28px;
             font-weight: 800;
             color: #1e3a8a;
             margin: 45px 0 20px 0;
@@ -143,11 +143,11 @@
 
         .career-item {
             background-color: #f8fafc;
-            padding: 22px; /* 패딩 살짝 증가 */
+            padding: 22px;
             margin-bottom: 16px;
             border-radius: 16px;
             border: 1px solid #eff6ff;
-            font-size: 22px; /* 19px -> 22px */
+            font-size: 22px;
             line-height: 1.5;
             color: #334155;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
@@ -191,10 +191,67 @@
         }
 
         .education-box p {
-            font-size: 23px; /* 20px -> 23px */
+            font-size: 23px;
             color: #1e40af;
             line-height: 1.8;
             font-weight: 600;
+        }
+
+        .certificate-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+            margin: 25px 0;
+        }
+
+        .certificate-item {
+            background-color: #f8fafc;
+            padding: 18px 14px;
+            border-radius: 14px;
+            border: 1px solid #eff6ff;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #334155;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+            transition: transform 0.2s ease;
+            animation: fadeInUp 0.6s ease-out backwards;
+        }
+
+        .certificate-item:hover {
+            transform: translateY(-2px);
+            background-color: white;
+            box-shadow: 0 5px 15px rgba(59, 130, 246, 0.15);
+        }
+
+        .certificate-item strong {
+            color: #2563eb;
+            font-weight: 700;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .license-section {
+            background: #f0fdf4;
+            padding: 22px;
+            border-radius: 16px;
+            border: 1px solid #dcfce7;
+            margin-top: 20px;
+            animation: fadeInUp 0.8s ease-out 0.3s backwards;
+        }
+
+        .license-section strong {
+            color: #15803d;
+            font-weight: 700;
+            font-size: 20px;
+            display: block;
+            margin-bottom: 12px;
+        }
+
+        .license-content {
+            font-size: 19px;
+            color: #334155;
+            line-height: 1.8;
         }
 
         .final-message {
@@ -215,13 +272,13 @@
         }
 
         .final-message h2 {
-            font-size: 32px; /* 29px -> 32px */
+            font-size: 32px;
             margin-bottom: 15px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
 
         .final-message p {
-            font-size: 24px; /* 21px -> 24px */
+            font-size: 24px;
             line-height: 1.8;
         }
 
@@ -238,7 +295,7 @@
 
         .contact-info a {
             color: #2563eb;
-            font-size: 31px; /* 27px -> 31px */
+            font-size: 31px;
             font-weight: 800;
             text-decoration: none;
             display: flex;
@@ -333,11 +390,75 @@
                 <p>광주숭일고 <br>· 서울 세종대</p>
             </div>
 
+            <div class="section-title">📜 자격증</div>
+            <div class="certificate-grid">
+                <div class="certificate-item">
+                    <strong>노후생활</strong>
+                    <span>전문가 1급</span>
+                </div>
+                <div class="certificate-item">
+                    <strong>문화복지사</strong>
+                    <span>1급</span>
+                </div>
+                <div class="certificate-item">
+                    <strong>원예관리사</strong>
+                    <span>1급</span>
+                </div>
+                <div class="certificate-item">
+                    <strong>퍼스널컬러</strong>
+                    <span>전문가 1급</span>
+                </div>
+                <div class="certificate-item">
+                    <strong>정원관리사</strong>
+                    <span>1급</span>
+                </div>
+                <div class="certificate-item">
+                    <strong>티소믈리에</strong>
+                    <span>1급</span>
+                </div>
+                <div class="certificate-item">
+                    <strong>집합건물</strong>
+                    <span>관리사 1급</span>
+                </div>
+                <div class="certificate-item">
+                    <strong>반려동물</strong>
+                    <span>관리사 1급</span>
+                </div>
+                <div class="certificate-item">
+                    <strong>반려동물</strong>
+                    <span>장례지도사 1급</span>
+                </div>
+                <div class="certificate-item">
+                    <strong>ESG</strong>
+                    <span>전문가 1급</span>
+                </div>
+                <div class="certificate-item">
+                    <strong>전통주</strong>
+                    <span>소믈리에 1급</span>
+                </div>
+                <div class="certificate-item">
+                    <strong>바리스타</strong>
+                    <span>2급</span>
+                </div>
+                <div class="certificate-item">
+                    <strong>칭찬박사</strong>
+                    <span>2급 명예교수</span>
+                </div>
+            </div>
+
+            <div class="license-section">
+                <strong>🚗 운전면허 및 기타</strong>
+                <div class="license-content">
+                    • 소형굴삭기면허 03<br>
+                    • 헬리콥터 소형<br>
+                    • 드론 소형
+                </div>
+            </div>
+
             <div class="final-message">
                 <h2>보성愛는 <br>寶城맞춤 </h2>
                 <p>선형수 두손모음</p>
             </div>
-
 
         </section>
     </div>
